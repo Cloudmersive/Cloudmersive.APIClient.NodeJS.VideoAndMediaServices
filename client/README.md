@@ -5,7 +5,7 @@ The video APIs help you convert, encode, and transcode videos.
 [Cloudmersive Video and Media Services API](https://github.com/Cloudmersive/Cloudmersive.APIClient.NodeJS.DocumentAndDataConvert.git) - Convert and encode video and media files and content between file formats. On-demand.
 
 - API version: v1
-- Package version: 2.0.1
+- Package version: 2.0.2
 
 
 ## Installation
@@ -103,19 +103,12 @@ Apikey.apiKey = "YOUR API KEY"
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Apikey.apiKeyPrefix['Apikey'] = "Token"
 
-var api = new CloudmersiveVideoApiClient.VideoApi()
-
-var inputFile = "/path/to/file.txt"; // {File} Input file to perform the operation on.
+var api = new CloudmersiveVideoApiClient.AudioApi()
 
 var opts = { 
-  'fileUrl': "fileUrl_example", // {String} Optional; URL of a video file being used for conversion. Use this option for files larger than 2GB.
-  'maxWidth': 56, // {Number} Optional; Maximum width of the output video, up to the original video width. Defaults to 250 pixels.
-  'maxHeight': 56, // {Number} Optional; Maximum height of the output video, up to the original video width. Defaults to 250 pixels.
-  'preserveAspectRatio': true, // {Boolean} Optional; If false, the original video's aspect ratio will not be preserved, allowing customization of the aspect ratio using maxWidth and maxHeight, potentially skewing the video. Default is true.
-  'frameRate': 56, // {Number} Optional; Specify the frame rate of the output video. Defaults to 24 frames per second.
-  'extendProcessingTime': true, // {Boolean} Optional; If true, will allow additional processing time for the video file conversion, using one API call per additional minute over the 5 minute default processing time, up to a maximum of 25 total minutes. This is generally necessary for files larger than 500 MB or longer than 30 minutes.
-  'startTime': new Date("2013-10-20T19:20:30+01:00"), // {Date} Optional; Specify the desired starting time of the GIF video in TimeSpan format.
-  'timeSpan': new Date("2013-10-20T19:20:30+01:00") // {Date} Optional; Specify the desired length of the GIF video in TimeSpan format. Limit is 30 minutes.
+  'inputFile': "/path/to/file.txt", // {File} Input file to perform the operation on.
+  'fileUrl': "fileUrl_example", // {String} Optional; URL of an audio file being used for conversion. Use this option for files larger than 2GB.
+  'bitRate': null // {Object} Optional; Specify the desired bitrate of the converted audio file in kilobytes per second (kB/s). Value may be between 48 and 1,411. By default, the optimal bitrate will be chosen automatically.
 };
 
 var callback = function(error, data, response) {
@@ -125,7 +118,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-api.videoConvertToGif(inputFile, opts, callback);
+api.audioConvertToAac(opts, callback);
 
 ```
 
@@ -135,16 +128,32 @@ All URIs are relative to *https://api.cloudmersive.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*CloudmersiveVideoApiClient.AudioApi* | [**audioConvertToAac**](docs/AudioApi.md#audioConvertToAac) | **POST** /audio/convert/to/aac | Convert Audio File to AAC format.
+*CloudmersiveVideoApiClient.AudioApi* | [**audioConvertToM4a**](docs/AudioApi.md#audioConvertToM4a) | **POST** /audio/convert/to/m4a | Convert Audio File to M4A format.
+*CloudmersiveVideoApiClient.AudioApi* | [**audioConvertToMp3**](docs/AudioApi.md#audioConvertToMp3) | **POST** /audio/convert/to/mp3 | Convert Audio File to MP3 format.
+*CloudmersiveVideoApiClient.AudioApi* | [**audioConvertToWav**](docs/AudioApi.md#audioConvertToWav) | **POST** /audio/convert/to/wav | Convert Audio File to WAV format.
 *CloudmersiveVideoApiClient.VideoApi* | [**videoConvertToGif**](docs/VideoApi.md#videoConvertToGif) | **POST** /video/convert/to/gif | Convert Video to Animated GIF format.
 *CloudmersiveVideoApiClient.VideoApi* | [**videoConvertToMov**](docs/VideoApi.md#videoConvertToMov) | **POST** /video/convert/to/mov | Convert Video to MOV format.
 *CloudmersiveVideoApiClient.VideoApi* | [**videoConvertToMp4**](docs/VideoApi.md#videoConvertToMp4) | **POST** /video/convert/to/mp4 | Convert Video to MP4 format.
+*CloudmersiveVideoApiClient.VideoApi* | [**videoConvertToStillFrames**](docs/VideoApi.md#videoConvertToStillFrames) | **POST** /video/convert/to/still-frames | Convert Video to PNG Still Frames.
 *CloudmersiveVideoApiClient.VideoApi* | [**videoConvertToWebm**](docs/VideoApi.md#videoConvertToWebm) | **POST** /video/convert/to/webm | Convert Video to WEBM format.
+*CloudmersiveVideoApiClient.VideoApi* | [**videoCutVideo**](docs/VideoApi.md#videoCutVideo) | **POST** /video/cut | Cut a Video to a Shorter Length
 *CloudmersiveVideoApiClient.VideoApi* | [**videoGetInfo**](docs/VideoApi.md#videoGetInfo) | **POST** /video/convert/get-info | Get detailed information about a video or audio file
+*CloudmersiveVideoApiClient.VideoApi* | [**videoResizeVideo**](docs/VideoApi.md#videoResizeVideo) | **POST** /video/resize/preserveAspectRatio | Resizes a Video Preserving the Original Aspect Ratio.
+*CloudmersiveVideoApiClient.VideoApi* | [**videoResizeVideoSimple**](docs/VideoApi.md#videoResizeVideoSimple) | **POST** /video/resize/target | Resizes a Video without Preserving Aspect Ratio.
+*CloudmersiveVideoApiClient.VideoApi* | [**videoScanForNsfw**](docs/VideoApi.md#videoScanForNsfw) | **POST** /video/scan/nsfw | Scan a Video for NSFW content.
+*CloudmersiveVideoApiClient.VideoApi* | [**videoSplitVideo**](docs/VideoApi.md#videoSplitVideo) | **POST** /video/split | Split a Video into Two Shorter Videos
 
 
 ## Documentation for Models
 
  - [CloudmersiveVideoApiClient.MediaInformation](docs/MediaInformation.md)
+ - [CloudmersiveVideoApiClient.NsfwResult](docs/NsfwResult.md)
+ - [CloudmersiveVideoApiClient.NsfwScannedFrame](docs/NsfwScannedFrame.md)
+ - [CloudmersiveVideoApiClient.SplitVideoResult](docs/SplitVideoResult.md)
+ - [CloudmersiveVideoApiClient.StillFrame](docs/StillFrame.md)
+ - [CloudmersiveVideoApiClient.StillFramesResult](docs/StillFramesResult.md)
+ - [CloudmersiveVideoApiClient.VideoFile](docs/VideoFile.md)
 
 
 ## Documentation for Authorization

@@ -80,6 +80,16 @@
         done();
       });
     });
+    describe('videoConvertToStillFrames', function() {
+      it('should call videoConvertToStillFrames successfully', function(done) {
+        //uncomment below and update the code to test videoConvertToStillFrames
+        //instance.videoConvertToStillFrames(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('videoConvertToWebm', function() {
       it('should call videoConvertToWebm successfully', function(done) {
         //uncomment below and update the code to test videoConvertToWebm
@@ -90,10 +100,60 @@
         done();
       });
     });
+    describe('videoCutVideo', function() {
+      it('should call videoCutVideo successfully', function(done) {
+        //uncomment below and update the code to test videoCutVideo
+        //instance.videoCutVideo(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('videoGetInfo', function() {
       it('should call videoGetInfo successfully', function(done) {
         //uncomment below and update the code to test videoGetInfo
         //instance.videoGetInfo(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('videoResizeVideo', function() {
+      it('should call videoResizeVideo successfully', function(done) {
+        //uncomment below and update the code to test videoResizeVideo
+        //instance.videoResizeVideo(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('videoResizeVideoSimple', function() {
+      it('should call videoResizeVideoSimple successfully', function(done) {
+        //uncomment below and update the code to test videoResizeVideoSimple
+        //instance.videoResizeVideoSimple(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('videoScanForNsfw', function() {
+      it('should call videoScanForNsfw successfully', function(done) {
+        //uncomment below and update the code to test videoScanForNsfw
+        //instance.videoScanForNsfw(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('videoSplitVideo', function() {
+      it('should call videoSplitVideo successfully', function(done) {
+        //uncomment below and update the code to test videoSplitVideo
+        //instance.videoSplitVideo(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

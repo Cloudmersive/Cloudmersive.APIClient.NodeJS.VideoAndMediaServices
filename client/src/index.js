@@ -16,12 +16,12 @@
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/MediaInformation', 'api/VideoApi'], factory);
+    define(['ApiClient', 'model/MediaInformation', 'model/NsfwResult', 'model/NsfwScannedFrame', 'model/SplitVideoResult', 'model/StillFrame', 'model/StillFramesResult', 'model/VideoFile', 'api/AudioApi', 'api/VideoApi'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./model/MediaInformation'), require('./api/VideoApi'));
+    module.exports = factory(require('./ApiClient'), require('./model/MediaInformation'), require('./model/NsfwResult'), require('./model/NsfwScannedFrame'), require('./model/SplitVideoResult'), require('./model/StillFrame'), require('./model/StillFramesResult'), require('./model/VideoFile'), require('./api/AudioApi'), require('./api/VideoApi'));
   }
-}(function(ApiClient, MediaInformation, VideoApi) {
+}(function(ApiClient, MediaInformation, NsfwResult, NsfwScannedFrame, SplitVideoResult, StillFrame, StillFramesResult, VideoFile, AudioApi, VideoApi) {
   'use strict';
 
   /**
@@ -53,7 +53,7 @@
    * </pre>
    * </p>
    * @module index
-   * @version 2.0.1
+   * @version 2.0.2
    */
   var exports = {
     /**
@@ -66,6 +66,41 @@
      * @property {module:model/MediaInformation}
      */
     MediaInformation: MediaInformation,
+    /**
+     * The NsfwResult model constructor.
+     * @property {module:model/NsfwResult}
+     */
+    NsfwResult: NsfwResult,
+    /**
+     * The NsfwScannedFrame model constructor.
+     * @property {module:model/NsfwScannedFrame}
+     */
+    NsfwScannedFrame: NsfwScannedFrame,
+    /**
+     * The SplitVideoResult model constructor.
+     * @property {module:model/SplitVideoResult}
+     */
+    SplitVideoResult: SplitVideoResult,
+    /**
+     * The StillFrame model constructor.
+     * @property {module:model/StillFrame}
+     */
+    StillFrame: StillFrame,
+    /**
+     * The StillFramesResult model constructor.
+     * @property {module:model/StillFramesResult}
+     */
+    StillFramesResult: StillFramesResult,
+    /**
+     * The VideoFile model constructor.
+     * @property {module:model/VideoFile}
+     */
+    VideoFile: VideoFile,
+    /**
+     * The AudioApi service constructor.
+     * @property {module:api/AudioApi}
+     */
+    AudioApi: AudioApi,
     /**
      * The VideoApi service constructor.
      * @property {module:api/VideoApi}

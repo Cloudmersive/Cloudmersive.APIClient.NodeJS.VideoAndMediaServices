@@ -1,6 +1,6 @@
 {
   "name": "cloudmersive-video-api-client",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "The_video_APIs_help_you_convert_encode_and_transcode_videos_",
   "license": "Unlicense",
   "main": "src/index.js",
