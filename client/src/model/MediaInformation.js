@@ -36,7 +36,7 @@
   /**
    * The MediaInformation model module.
    * @module model/MediaInformation
-   * @version 2.0.2
+   * @version 2.0.3
    */
 
   /**

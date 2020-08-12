@@ -5,7 +5,7 @@ The video APIs help you convert, encode, and transcode videos.
 [Cloudmersive Video and Media Services API](https://github.com/Cloudmersive/Cloudmersive.APIClient.NodeJS.DocumentAndDataConvert.git) - Convert and encode video and media files and content between file formats. On-demand.
 
 - API version: v1
-- Package version: 2.0.2
+- Package version: 2.0.3
 
 
 ## Installation
@@ -128,10 +128,10 @@ All URIs are relative to *https://api.cloudmersive.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*CloudmersiveVideoApiClient.AudioApi* | [**audioConvertToAac**](docs/AudioApi.md#audioConvertToAac) | **POST** /audio/convert/to/aac | Convert Audio File to AAC format.
-*CloudmersiveVideoApiClient.AudioApi* | [**audioConvertToM4a**](docs/AudioApi.md#audioConvertToM4a) | **POST** /audio/convert/to/m4a | Convert Audio File to M4A format.
-*CloudmersiveVideoApiClient.AudioApi* | [**audioConvertToMp3**](docs/AudioApi.md#audioConvertToMp3) | **POST** /audio/convert/to/mp3 | Convert Audio File to MP3 format.
-*CloudmersiveVideoApiClient.AudioApi* | [**audioConvertToWav**](docs/AudioApi.md#audioConvertToWav) | **POST** /audio/convert/to/wav | Convert Audio File to WAV format.
+*CloudmersiveVideoApiClient.AudioApi* | [**audioConvertToAac**](docs/AudioApi.md#audioConvertToAac) | **POST** /video/convert/to/aac | Convert Audio File to AAC format.
+*CloudmersiveVideoApiClient.AudioApi* | [**audioConvertToM4a**](docs/AudioApi.md#audioConvertToM4a) | **POST** /video/convert/to/m4a | Convert Audio File to M4A format.
+*CloudmersiveVideoApiClient.AudioApi* | [**audioConvertToMp3**](docs/AudioApi.md#audioConvertToMp3) | **POST** /video/convert/to/mp3 | Convert Audio File to MP3 format.
+*CloudmersiveVideoApiClient.AudioApi* | [**audioConvertToWav**](docs/AudioApi.md#audioConvertToWav) | **POST** /video/convert/to/wav | Convert Audio File to WAV format.
 *CloudmersiveVideoApiClient.VideoApi* | [**videoConvertToGif**](docs/VideoApi.md#videoConvertToGif) | **POST** /video/convert/to/gif | Convert Video to Animated GIF format.
 *CloudmersiveVideoApiClient.VideoApi* | [**videoConvertToMov**](docs/VideoApi.md#videoConvertToMov) | **POST** /video/convert/to/mov | Convert Video to MOV format.
 *CloudmersiveVideoApiClient.VideoApi* | [**videoConvertToMp4**](docs/VideoApi.md#videoConvertToMp4) | **POST** /video/convert/to/mp4 | Convert Video to MP4 format.

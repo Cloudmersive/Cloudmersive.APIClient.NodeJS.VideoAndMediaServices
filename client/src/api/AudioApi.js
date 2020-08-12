@@ -33,7 +33,7 @@
   /**
    * Audio service.
    * @module api/AudioApi
-   * @version 2.0.2
+   * @version 2.0.3
    */
 
   /**
@@ -90,7 +90,7 @@
       var returnType = 'Blob';
 
       return this.apiClient.callApi(
-        '/audio/convert/to/aac', 'POST',
+        '/video/convert/to/aac', 'POST',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -139,7 +139,7 @@
       var returnType = 'Blob';
 
       return this.apiClient.callApi(
-        '/audio/convert/to/m4a', 'POST',
+        '/video/convert/to/m4a', 'POST',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -188,7 +188,7 @@
       var returnType = 'Blob';
 
       return this.apiClient.callApi(
-        '/audio/convert/to/mp3', 'POST',
+        '/video/convert/to/mp3', 'POST',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -237,7 +237,7 @@
       var returnType = 'Blob';
 
       return this.apiClient.callApi(
-        '/audio/convert/to/wav', 'POST',
+        '/video/convert/to/wav', 'POST',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
