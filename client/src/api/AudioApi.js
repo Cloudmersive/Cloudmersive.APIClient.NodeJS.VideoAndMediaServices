@@ -33,7 +33,7 @@
   /**
    * Audio service.
    * @module api/AudioApi
-   * @version 2.0.3
+   * @version 2.0.4
    */
 
   /**
@@ -61,7 +61,7 @@
      * @param {Object} opts Optional parameters
      * @param {File} opts.inputFile Input file to perform the operation on.
      * @param {String} opts.fileUrl Optional; URL of an audio file being used for conversion. Use this option for files larger than 2GB.
-     * @param {Object} opts.bitRate Optional; Specify the desired bitrate of the converted audio file in kilobytes per second (kB/s). Value may be between 48 and 1,411. By default, the optimal bitrate will be chosen automatically.
+     * @param {Number} opts.bitRate Optional; Specify the desired bitrate of the converted audio file in kilobytes per second (kB/s). Value may be between 48 and 1,411. By default, the optimal bitrate will be chosen automatically.
      * @param {module:api/AudioApi~audioConvertToAacCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link 'Blob'}
      */
@@ -86,7 +86,7 @@
 
       var authNames = ['Apikey'];
       var contentTypes = ['multipart/form-data'];
-      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      var accepts = ['application/octet-stream'];
       var returnType = 'Blob';
 
       return this.apiClient.callApi(
@@ -110,7 +110,7 @@
      * @param {Object} opts Optional parameters
      * @param {File} opts.inputFile Input file to perform the operation on.
      * @param {String} opts.fileUrl Optional; URL of an audio file being used for conversion. Use this option for files larger than 2GB.
-     * @param {Object} opts.bitRate Optional; Specify the desired bitrate of the converted audio file in kilobytes per second (kB/s). Value may be between 48 and 1,411. By default, the optimal bitrate will be chosen automatically.
+     * @param {Number} opts.bitRate Optional; Specify the desired bitrate of the converted audio file in kilobytes per second (kB/s). Value may be between 48 and 1,411. By default, the optimal bitrate will be chosen automatically.
      * @param {module:api/AudioApi~audioConvertToM4aCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link 'Blob'}
      */
@@ -135,7 +135,7 @@
 
       var authNames = ['Apikey'];
       var contentTypes = ['multipart/form-data'];
-      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      var accepts = ['application/octet-stream'];
       var returnType = 'Blob';
 
       return this.apiClient.callApi(
@@ -159,7 +159,7 @@
      * @param {Object} opts Optional parameters
      * @param {File} opts.inputFile Input file to perform the operation on.
      * @param {String} opts.fileUrl Optional; URL of an audio file being used for conversion. Use this option for files larger than 2GB.
-     * @param {Object} opts.bitRate Optional; Specify the desired bitrate of the converted audio file in kilobytes per second (kB/s). Value may be between 48 and 1,411. By default, the optimal bitrate will be chosen automatically.
+     * @param {Number} opts.bitRate Optional; Specify the desired bitrate of the converted audio file in kilobytes per second (kB/s). Value may be between 48 and 1,411. By default, the optimal bitrate will be chosen automatically.
      * @param {module:api/AudioApi~audioConvertToMp3Callback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link 'Blob'}
      */
@@ -184,7 +184,7 @@
 
       var authNames = ['Apikey'];
       var contentTypes = ['multipart/form-data'];
-      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      var accepts = ['application/octet-stream'];
       var returnType = 'Blob';
 
       return this.apiClient.callApi(
@@ -208,7 +208,7 @@
      * @param {Object} opts Optional parameters
      * @param {File} opts.inputFile Input file to perform the operation on.
      * @param {String} opts.fileUrl Optional; URL of an audio file being used for conversion. Use this option for files larger than 2GB.
-     * @param {Object} opts.sampleRate Optional; Specify the desired sample rate of the converted audio file in kHz. Value may be between 8 and 96. Standard for audio CDs is 44.1, while DVD audio standard is 48. By default, the optimal sample rate will be chosen automatically.
+     * @param {Number} opts.sampleRate Optional; Specify the desired sample rate of the converted audio file in kHz. Value may be between 8 and 96. Standard for audio CDs is 44.1, while DVD audio standard is 48. By default, the optimal sample rate will be chosen automatically.
      * @param {module:api/AudioApi~audioConvertToWavCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link 'Blob'}
      */
@@ -233,7 +233,7 @@
 
       var authNames = ['Apikey'];
       var contentTypes = ['multipart/form-data'];
-      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      var accepts = ['application/octet-stream'];
       var returnType = 'Blob';
 
       return this.apiClient.callApi(

@@ -33,7 +33,7 @@
   /**
    * Video service.
    * @module api/VideoApi
-   * @version 2.0.3
+   * @version 2.0.4
    */
 
   /**
@@ -96,7 +96,7 @@
 
       var authNames = ['Apikey'];
       var contentTypes = ['multipart/form-data'];
-      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      var accepts = ['application/octet-stream'];
       var returnType = 'Blob';
 
       return this.apiClient.callApi(
@@ -153,7 +153,7 @@
 
       var authNames = ['Apikey'];
       var contentTypes = ['multipart/form-data'];
-      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      var accepts = ['application/octet-stream'];
       var returnType = 'Blob';
 
       return this.apiClient.callApi(
@@ -210,7 +210,7 @@
 
       var authNames = ['Apikey'];
       var contentTypes = ['multipart/form-data'];
-      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      var accepts = ['application/octet-stream'];
       var returnType = 'Blob';
 
       return this.apiClient.callApi(
@@ -236,7 +236,7 @@
      * @param {String} opts.fileUrl Optional; URL of a video file being used for conversion. Use this option for files larger than 2GB.
      * @param {Number} opts.maxWidth Optional; Maximum width of the output video, up to the original video width. Defaults to original video width.
      * @param {Number} opts.maxHeight Optional; Maximum height of the output video, up to the original video width. Defaults to original video height.
-     * @param {Object} opts.framesPerSecond Optional; How many video frames per second to be returned as PNG images. Minimum value is 0.1, maximum is 60. Default is 1 frame per second. Maximum of 2000 total frames.
+     * @param {Number} opts.framesPerSecond Optional; How many video frames per second to be returned as PNG images. Minimum value is 0.1, maximum is 60. Default is 1 frame per second. Maximum of 2000 total frames.
      * @param {module:api/VideoApi~videoConvertToStillFramesCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/StillFramesResult}
      */
@@ -320,7 +320,7 @@
 
       var authNames = ['Apikey'];
       var contentTypes = ['multipart/form-data'];
-      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      var accepts = ['application/octet-stream'];
       var returnType = 'Blob';
 
       return this.apiClient.callApi(
@@ -371,7 +371,7 @@
 
       var authNames = ['Apikey'];
       var contentTypes = ['multipart/form-data'];
-      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      var accepts = ['application/octet-stream'];
       var returnType = 'Blob';
 
       return this.apiClient.callApi(
@@ -475,7 +475,7 @@
 
       var authNames = ['Apikey'];
       var contentTypes = ['multipart/form-data'];
-      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      var accepts = ['application/octet-stream'];
       var returnType = 'Blob';
 
       return this.apiClient.callApi(
@@ -532,7 +532,7 @@
 
       var authNames = ['Apikey'];
       var contentTypes = ['multipart/form-data'];
-      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      var accepts = ['application/octet-stream'];
       var returnType = 'Blob';
 
       return this.apiClient.callApi(
@@ -556,7 +556,7 @@
      * @param {Object} opts Optional parameters
      * @param {File} opts.inputFile Input file to perform the operation on.
      * @param {String} opts.fileUrl Optional; URL of a video file being scanned. Use this option for files larger than 2GB.
-     * @param {Object} opts.framesPerSecond Optional; How many video frames per second to be scanned. Minimum value is 0.05 (1 frame per 20 seconds), maximum is 1. Default is 0.33 frame per second (1 frame scanned every 3 seconds). Maximum of 1000 total frames can be scanned, potentially adjusting the framerate for longer videos.
+     * @param {Number} opts.framesPerSecond Optional; How many video frames per second to be scanned. Minimum value is 0.05 (1 frame per 20 seconds), maximum is 1. Default is 0.33 frame per second (1 frame scanned every 3 seconds). Maximum of 1000 total frames can be scanned, potentially adjusting the framerate for longer videos.
      * @param {module:api/VideoApi~videoScanForNsfwCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/NsfwResult}
      */
@@ -637,7 +637,7 @@
 
       var authNames = ['Apikey'];
       var contentTypes = ['multipart/form-data'];
-      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      var accepts = ['application/octet-stream'];
       var returnType = SplitVideoResult;
 
       return this.apiClient.callApi(

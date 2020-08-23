@@ -36,7 +36,7 @@
   /**
    * The NsfwResult model module.
    * @module model/NsfwResult
-   * @version 2.0.3
+   * @version 2.0.4
    */
 
   /**

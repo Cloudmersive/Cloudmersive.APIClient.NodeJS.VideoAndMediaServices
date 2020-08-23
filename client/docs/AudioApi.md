@@ -34,7 +34,7 @@ var apiInstance = new CloudmersiveVideoApiClient.AudioApi();
 var opts = { 
   'inputFile': "/path/to/file.txt", // File | Input file to perform the operation on.
   'fileUrl': "fileUrl_example", // String | Optional; URL of an audio file being used for conversion. Use this option for files larger than 2GB.
-  'bitRate': null // Object | Optional; Specify the desired bitrate of the converted audio file in kilobytes per second (kB/s). Value may be between 48 and 1,411. By default, the optimal bitrate will be chosen automatically.
+  'bitRate': 56 // Number | Optional; Specify the desired bitrate of the converted audio file in kilobytes per second (kB/s). Value may be between 48 and 1,411. By default, the optimal bitrate will be chosen automatically.
 };
 
 var callback = function(error, data, response) {
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **inputFile** | **File**| Input file to perform the operation on. | [optional] 
  **fileUrl** | **String**| Optional; URL of an audio file being used for conversion. Use this option for files larger than 2GB. | [optional] 
- **bitRate** | [**Object**](.md)| Optional; Specify the desired bitrate of the converted audio file in kilobytes per second (kB/s). Value may be between 48 and 1,411. By default, the optimal bitrate will be chosen automatically. | [optional] 
+ **bitRate** | **Number**| Optional; Specify the desired bitrate of the converted audio file in kilobytes per second (kB/s). Value may be between 48 and 1,411. By default, the optimal bitrate will be chosen automatically. | [optional] 
 
 ### Return type
 
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: multipart/form-data
- - **Accept**: application/json, text/json, application/xml, text/xml
+ - **Accept**: application/octet-stream
 
 <a name="audioConvertToM4a"></a>
 # **audioConvertToM4a**
@@ -92,7 +92,7 @@ var apiInstance = new CloudmersiveVideoApiClient.AudioApi();
 var opts = { 
   'inputFile': "/path/to/file.txt", // File | Input file to perform the operation on.
   'fileUrl': "fileUrl_example", // String | Optional; URL of an audio file being used for conversion. Use this option for files larger than 2GB.
-  'bitRate': null // Object | Optional; Specify the desired bitrate of the converted audio file in kilobytes per second (kB/s). Value may be between 48 and 1,411. By default, the optimal bitrate will be chosen automatically.
+  'bitRate': 56 // Number | Optional; Specify the desired bitrate of the converted audio file in kilobytes per second (kB/s). Value may be between 48 and 1,411. By default, the optimal bitrate will be chosen automatically.
 };
 
 var callback = function(error, data, response) {
@@ -111,7 +111,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **inputFile** | **File**| Input file to perform the operation on. | [optional] 
  **fileUrl** | **String**| Optional; URL of an audio file being used for conversion. Use this option for files larger than 2GB. | [optional] 
- **bitRate** | [**Object**](.md)| Optional; Specify the desired bitrate of the converted audio file in kilobytes per second (kB/s). Value may be between 48 and 1,411. By default, the optimal bitrate will be chosen automatically. | [optional] 
+ **bitRate** | **Number**| Optional; Specify the desired bitrate of the converted audio file in kilobytes per second (kB/s). Value may be between 48 and 1,411. By default, the optimal bitrate will be chosen automatically. | [optional] 
 
 ### Return type
 
@@ -124,7 +124,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: multipart/form-data
- - **Accept**: application/json, text/json, application/xml, text/xml
+ - **Accept**: application/octet-stream
 
 <a name="audioConvertToMp3"></a>
 # **audioConvertToMp3**
@@ -150,7 +150,7 @@ var apiInstance = new CloudmersiveVideoApiClient.AudioApi();
 var opts = { 
   'inputFile': "/path/to/file.txt", // File | Input file to perform the operation on.
   'fileUrl': "fileUrl_example", // String | Optional; URL of an audio file being used for conversion. Use this option for files larger than 2GB.
-  'bitRate': null // Object | Optional; Specify the desired bitrate of the converted audio file in kilobytes per second (kB/s). Value may be between 48 and 1,411. By default, the optimal bitrate will be chosen automatically.
+  'bitRate': 56 // Number | Optional; Specify the desired bitrate of the converted audio file in kilobytes per second (kB/s). Value may be between 48 and 1,411. By default, the optimal bitrate will be chosen automatically.
 };
 
 var callback = function(error, data, response) {
@@ -169,7 +169,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **inputFile** | **File**| Input file to perform the operation on. | [optional] 
  **fileUrl** | **String**| Optional; URL of an audio file being used for conversion. Use this option for files larger than 2GB. | [optional] 
- **bitRate** | [**Object**](.md)| Optional; Specify the desired bitrate of the converted audio file in kilobytes per second (kB/s). Value may be between 48 and 1,411. By default, the optimal bitrate will be chosen automatically. | [optional] 
+ **bitRate** | **Number**| Optional; Specify the desired bitrate of the converted audio file in kilobytes per second (kB/s). Value may be between 48 and 1,411. By default, the optimal bitrate will be chosen automatically. | [optional] 
 
 ### Return type
 
@@ -182,7 +182,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: multipart/form-data
- - **Accept**: application/json, text/json, application/xml, text/xml
+ - **Accept**: application/octet-stream
 
 <a name="audioConvertToWav"></a>
 # **audioConvertToWav**
@@ -208,7 +208,7 @@ var apiInstance = new CloudmersiveVideoApiClient.AudioApi();
 var opts = { 
   'inputFile': "/path/to/file.txt", // File | Input file to perform the operation on.
   'fileUrl': "fileUrl_example", // String | Optional; URL of an audio file being used for conversion. Use this option for files larger than 2GB.
-  'sampleRate': null // Object | Optional; Specify the desired sample rate of the converted audio file in kHz. Value may be between 8 and 96. Standard for audio CDs is 44.1, while DVD audio standard is 48. By default, the optimal sample rate will be chosen automatically.
+  'sampleRate': 8.14 // Number | Optional; Specify the desired sample rate of the converted audio file in kHz. Value may be between 8 and 96. Standard for audio CDs is 44.1, while DVD audio standard is 48. By default, the optimal sample rate will be chosen automatically.
 };
 
 var callback = function(error, data, response) {
@@ -227,7 +227,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **inputFile** | **File**| Input file to perform the operation on. | [optional] 
  **fileUrl** | **String**| Optional; URL of an audio file being used for conversion. Use this option for files larger than 2GB. | [optional] 
- **sampleRate** | [**Object**](.md)| Optional; Specify the desired sample rate of the converted audio file in kHz. Value may be between 8 and 96. Standard for audio CDs is 44.1, while DVD audio standard is 48. By default, the optimal sample rate will be chosen automatically. | [optional] 
+ **sampleRate** | **Number**| Optional; Specify the desired sample rate of the converted audio file in kHz. Value may be between 8 and 96. Standard for audio CDs is 44.1, while DVD audio standard is 48. By default, the optimal sample rate will be chosen automatically. | [optional] 
 
 ### Return type
 
@@ -240,5 +240,5 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: multipart/form-data
- - **Accept**: application/json, text/json, application/xml, text/xml
+ - **Accept**: application/octet-stream
 

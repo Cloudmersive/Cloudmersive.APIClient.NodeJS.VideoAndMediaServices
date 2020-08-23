@@ -5,7 +5,7 @@ The video APIs help you convert, encode, and transcode videos.
 [Cloudmersive Video and Media Services API](https://github.com/Cloudmersive/Cloudmersive.APIClient.NodeJS.DocumentAndDataConvert.git) - Convert and encode video and media files and content between file formats. On-demand.
 
 - API version: v1
-- Package version: 2.0.3
+- Package version: 2.0.4
 
 
 ## Installation
@@ -108,7 +108,7 @@ var api = new CloudmersiveVideoApiClient.AudioApi()
 var opts = { 
   'inputFile': "/path/to/file.txt", // {File} Input file to perform the operation on.
   'fileUrl': "fileUrl_example", // {String} Optional; URL of an audio file being used for conversion. Use this option for files larger than 2GB.
-  'bitRate': null // {Object} Optional; Specify the desired bitrate of the converted audio file in kilobytes per second (kB/s). Value may be between 48 and 1,411. By default, the optimal bitrate will be chosen automatically.
+  'bitRate': 56 // {Number} Optional; Specify the desired bitrate of the converted audio file in kilobytes per second (kB/s). Value may be between 48 and 1,411. By default, the optimal bitrate will be chosen automatically.
 };
 
 var callback = function(error, data, response) {

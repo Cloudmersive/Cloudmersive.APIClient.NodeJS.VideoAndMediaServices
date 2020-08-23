@@ -36,7 +36,7 @@
   /**
    * The NsfwScannedFrame model module.
    * @module model/NsfwScannedFrame
-   * @version 2.0.3
+   * @version 2.0.4
    */
 
   /**
