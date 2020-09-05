@@ -1,8 +1,8 @@
 {
   "name": "cloudmersive-video-api-client",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "The_video_APIs_help_you_convert_encode_and_transcode_videos_",
-  "license": "Unlicense",
+  "license": "Apache-2.0",
   "main": "src/index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --recursive"

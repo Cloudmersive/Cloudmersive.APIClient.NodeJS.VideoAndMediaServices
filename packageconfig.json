@@ -1,5 +1,6 @@
 ﻿{
 
   "projectName" : "cloudmersive-video-api-client",
-  "projectVersion": "2.0.4"
+  "projectVersion": "2.0.5",
+  "licenseName": "Apache-2.0"
 }  

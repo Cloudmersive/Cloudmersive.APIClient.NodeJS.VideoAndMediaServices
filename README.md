@@ -5,7 +5,7 @@ The video APIs help you convert, encode, and transcode videos.
 [Cloudmersive Video and Media Services API](https://github.com/Cloudmersive/Cloudmersive.APIClient.NodeJS.DocumentAndDataConvert.git) - Convert and encode video and media files and content between file formats. On-demand.
 
 - API version: v1
-- Package version: 2.0.4
+- Package version: 2.0.5
 
 
 ## Installation

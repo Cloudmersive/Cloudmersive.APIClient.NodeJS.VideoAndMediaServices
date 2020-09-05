@@ -36,7 +36,7 @@
   /**
    * The StillFramesResult model module.
    * @module model/StillFramesResult
-   * @version 2.0.4
+   * @version 2.0.5
    */
 
   /**

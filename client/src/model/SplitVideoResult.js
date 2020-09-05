@@ -36,7 +36,7 @@
   /**
    * The SplitVideoResult model module.
    * @module model/SplitVideoResult
-   * @version 2.0.4
+   * @version 2.0.5
    */
 
   /**
